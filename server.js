@@ -1,12 +1,16 @@
 const express = require('express');
+const { truncate } = require('./models/Category');
 const routes = require('./routes');
 // import sequelize connection
+const sequelize = require('./config/connection');
+
+
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 
 app.use(routes);
 
