@@ -1,5 +1,7 @@
 # E_Commerce_Me
 
+## Description
+E_Commerce_Me uses Sequelize models to create a user-friendly back end for an internet based retail company. By entering 'npm start', the user is able to create, update and delete Categories, Products and Tags. 
 
 
 ## User Story
