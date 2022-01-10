@@ -58,7 +58,7 @@ router.post("/", (req, res) => {
     .then((createdCategory) => res.json(createdCategory))
     .catch((err) => {
       console.log(err);
-      res.json(400).json(err);
+      res.status(400).json(err);
     });
 });
 
