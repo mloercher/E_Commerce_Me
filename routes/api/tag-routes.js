@@ -61,7 +61,7 @@ router.post("/", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-  Tag.update({
+  Tag.update(req.body, {
     where: {
       id: req.params.id,
     },
